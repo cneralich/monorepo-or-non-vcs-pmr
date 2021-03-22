@@ -25,7 +25,7 @@ First, clone the repository with the module to your laptop if you do not already
 ## Step 2: Create a Module
 In this step, you will use the [Create a Module](https://www.terraform.io/docs/enterprise/api/modules.html#create-a-module) TFC/E API to create a module that's housed in a monorepo or does not have a backing VCS repository.
 
-1. Export your user API token for the TFE server with `export TFE_TOKEN=<your_token>`.
+1. Export your user API token for the TFC/E server with `export TFE_TOKEN=<your_token>`.
 2. Create a file called `<module_name>_module.json` where "\<module_name\>" is the name of your module.
 3. Copy the JSON text from [create module sample payload](https://www.terraform.io/docs/enterprise/api/modules.html#sample-payload-1) into it.
 4. Change the module's name, "my-module", to "\<module_name\>".
@@ -90,5 +90,5 @@ curl --header "Content-Type: application/octet-stream" \
 
  This curl command will not give any output.
 
-## Viewing Your Module in the TFE Private Module Registry
+## Viewing Your Module in the TFC/E Private Module Registry
 If the module was successfully uploaded, you will be able to see it in the TFC/E UI by selecting the Modules menu or navigating to `https://<tfe_server>/app/<organization>/modules` where `<tfe_server>` is the URL of your TFC/E server and `<organization>` is the organization on that TFC/E server into which you loaded the module. You can then click the `Details` button to see the module including instructions for using it from Terraform code.
