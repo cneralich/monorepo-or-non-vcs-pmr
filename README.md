@@ -1,5 +1,3 @@
-# How to Create a non-VCS-backed Private Module Registry in Terraform Cloud or Terraform Enterprise
-
 # Adding Modules to TFC/E's Private Module Registry
 The following procedure can be used to add Terraform modules to TFC/E's [Private Module Registry](https://www.terraform.io/docs/enterprise/registry/index.html) when they are housed in a monorepo or within a VCS system that is not supported by TFC/E.  Note that we are using the [Registry Modules](https://www.terraform.io/docs/enterprise/api/modules.html) endpoint of the TFC/E API.
 
